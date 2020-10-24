@@ -495,3 +495,15 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 endif
 
 set background=dark
+
+hi LineNr term=standout ctermbg=235
+hi CursorLineNr term=standout ctermfg=white ctermbg=235
+hi Visual term=standout ctermbg=236
+hi SignifyLineAdd ctermbg=235 guibg=#002b36
+hi SignifyLineChange ctermbg=235 guibg=#002b36
+hi SignifyLineChangeDelete ctermbg=235 guibg=#002b36
+hi SignifyLineDelete ctermbg=235 guibg=#002b36
+hi SignifyLineDeleteFirstLine ctermbg=235 guibg=#002b36
+hi SignifySignAdd ctermbg=235 guibg=#002b36
+hi SignifySignChange ctermbg=235 guibg=#002b36
+

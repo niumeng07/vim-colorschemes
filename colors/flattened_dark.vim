@@ -15,14 +15,15 @@ hi  Normal                                  ctermfg=12  ctermbg=8  guifg=#839496
 set background=dark
 
 hi  ColorColumn                             ctermbg=0  guibg=#073642  gui=NONE
-hi  Comment                                 ctermfg=10  guifg=#586e75  gui=italic
+hi  Comment                                 ctermfg=DarkGrey guifg=#586e75  gui=italic
 hi  ConId                                   ctermfg=3  guifg=#b58900  gui=NONE
 hi  Conceal                                 ctermfg=4  guifg=#268bd2  gui=NONE
-hi  Constant                                ctermfg=6  guifg=#2aa198  gui=NONE
+hi  Constant                                ctermfg=30 guifg=#2aa198  gui=NONE
 hi  Cursor                                  ctermfg=8  ctermbg=12  guifg=#002b36  guibg=#839496  gui=NONE
-hi  CursorColumn                            ctermbg=0  guibg=#073642  gui=NONE
-hi  CursorLine                              cterm=NONE  ctermbg=0  guibg=#073642  guisp=#93a1a1  gui=NONE
-hi  CursorLineNr                            cterm=NONE ctermfg=11  guifg=yellow  gui=NONE
+hi  CursorColumn                            ctermbg=0  guibg=#073642  gui=NONE term=standout cterm=NONE
+hi  CursorLine                              term=standout cterm=NONE  ctermbg=0  guibg=#00313d gui=NONE guisp=#93a1a1
+hi  CursorLineNr                            cterm=NONE term=standout ctermfg=grey guifg=#aaaaaa gui=NONE
+hi  LineNr                                  cterm=NONE term=standout ctermfg=darkgrey guifg=#586e75  gui=NONE guibg=#002b36
 hi  DiffAdd                                 ctermfg=2  ctermbg=0  guifg=#719e07  guibg=#073642  guisp=#719e07  gui=NONE
 hi  DiffChange                              ctermfg=3  ctermbg=0  guifg=#b58900  guibg=#073642  guisp=#b58900  gui=NONE
 hi  DiffDelete                              ctermfg=1  ctermbg=0  guifg=#dc322f  guibg=#073642  gui=NONE
@@ -33,21 +34,20 @@ hi  ErrorMsg                                cterm=reverse  ctermfg=1  ctermbg=NO
 hi  FoldColumn                              ctermfg=12  ctermbg=0  guifg=#839496  guibg=#073642  gui=NONE
 hi  Folded                                  cterm=NONE,underline  ctermfg=12  ctermbg=0  guifg=#839496  guibg=#073642  guisp=#002b36  gui=NONE
 hi  HelpExample                             ctermfg=14  guifg=#93a1a1  gui=NONE
-hi  Identifier                              ctermfg=4  guifg=#268bd2  gui=NONE
+hi  Identifier                              ctermfg=4  guifg=#93a1a1  gui=NONE cterm=NONE term=NONE
 hi  IncSearch                               cterm=standout  ctermfg=9  guifg=#cb4b16  gui=standout
-hi  LineNr                                  ctermfg=10  ctermbg=0  guifg=#586e75  guibg=#073642  gui=NONE
-hi  MatchParen                              cterm=NONE  ctermfg=1  ctermbg=10  guifg=#dc322f  guibg=#586e75  gui=NONE
+hi  MatchParen                              cterm=NONE ctermfg=white ctermbg=10  guifg=#dc322f  guibg=#586e75  gui=NONE
 hi  ModeMsg                                 ctermfg=4  guifg=#268bd2  gui=NONE
 hi  MoreMsg                                 ctermfg=4  guifg=#268bd2  gui=NONE
-hi  NonText                                 cterm=NONE  ctermfg=11  guifg=#657b83  gui=NONE
-hi  Pmenu                                   cterm=reverse  ctermfg=12  ctermbg=0  guifg=#839496  guibg=#073642  gui=reverse
+hi  NonText                                 cterm=NONE gui=NONE ctermfg=008 guifg=#002b36 guibg=#002b36
+hi Pmenu                                    ctermbg=grey guibg=#073642
 hi  PmenuSbar                               cterm=reverse  ctermfg=7  ctermbg=12  guifg=#eee8d5  guibg=#839496  gui=reverse
-hi  PmenuSel                                cterm=reverse  ctermfg=10  ctermbg=7  guifg=#586e75  guibg=#eee8d5  gui=reverse
+hi  PmenuSel                                cterm=reverse  ctermfg=008 ctermbg=002  guifg=#586e75  guibg=#00313d gui=reverse
 hi  PmenuThumb                              cterm=reverse  ctermfg=12  ctermbg=8  guifg=#839496  guibg=#002b36  gui=reverse
 hi  PreProc                                 cterm=NONE  ctermfg=1  guifg=#cb4b16  gui=NONE
 hi  Question                                cterm=NONE  ctermfg=6  guifg=#2aa198  gui=NONE
 hi  Search                                  cterm=reverse  ctermfg=3 ctermbg=NONE  guifg=#b58900  guibg=NONE  gui=reverse
-hi  SignColumn                              cterm=NONE  ctermfg=12  ctermbg=NONE  guifg=#839496  guibg=NONE  gui=NONE
+hi  SignColumn                              cterm=NONE  ctermfg=12 ctermbg=008 guibg=#002b36 guifg=#839496 gui=NONE
 hi  Special                                 cterm=NONE  ctermfg=1  guifg=#dc322f  gui=NONE
 hi  SpecialKey                              cterm=NONE  ctermfg=11  ctermbg=0  guifg=#657b83  guibg=#073642  gui=NONE
 hi  SpellBad                                cterm=undercurl  ctermfg=NONE  ctermbg=NONE  guisp=#dc322f  gui=undercurl
@@ -65,11 +65,33 @@ hi  Todo                                    cterm=NONE  ctermfg=5  guifg=#d33682
 hi  Type                                    ctermfg=3  guifg=#b58900  gui=NONE
 hi  Underlined                              ctermfg=13  guifg=#6c71c4  gui=NONE
 hi  VarId                                   ctermfg=4  guifg=#268bd2  gui=NONE
-hi  VertSplit                               ctermfg=11  ctermbg=11  guifg=#657b83  guibg=#657b83  gui=NONE
-hi  Visual                                  cterm=reverse  ctermfg=10  ctermbg=8  guifg=#586e75  guibg=#002b36  gui=reverse
+hi  VertSplit                               ctermbg=000 ctermfg=008 guibg=#00313d guifg=#002b36 gui=reverse
+hi  Visual                                  cterm=reverse  ctermfg=10  term=standout ctermbg=235 guifg=#586e75  guibg=#002b36  gui=reverse
 hi  VisualNOS                               cterm=reverse  ctermbg=0  ctermbg=NONE  guibg=#073642  guifg=NONE  gui=reverse
 hi  WarningMsg                              cterm=NONE  ctermfg=9  guifg=#dc322f  gui=NONE
 hi  WildMenu                                cterm=reverse  ctermfg=7  ctermbg=0  guifg=#eee8d5  guibg=#073642 gui=reverse
+
+hi ClapInput                                cterm=reverse ctermfg=8 ctermbg=2 guifg=#002b36 guibg=#888888 gui=reverse
+hi ClapDisplay                              cterm=reverse ctermfg=8 ctermbg=2 guifg=#00313d guibg=#888888 gui=reverse
+hi ClapDefaultPreview                       cterm=reverse ctermfg=8 ctermbg=2 guifg=#00313d guibg=#000000 gui=reverse
+hi ClapCurrentSelection                     cterm=reverse ctermfg=8 ctermbg=2 guifg=#00313d guibg=#888888 gui=reverse
+hi ClapSelected                             cterm=reverse ctermfg=8 ctermbg=2 guifg=#00313d guibg=#000000 gui=reverse
+hi ClapDefaultSelected                      cterm=reverse ctermfg=8 ctermbg=2 guifg=#00313d guibg=#000000 gui=reverse
+hi ClapDefaultCurrentSelection              cterm=reverse ctermfg=8 ctermbg=2 guifg=#00313d guibg=#000000 gui=reverse
+hi ClapMatches                              cterm=reverse ctermfg=8 ctermbg=2 guifg=#00313d guibg=#000000 gui=reverse
+hi ClapFuzzyMatches                         cterm=reverse ctermfg=8 ctermbg=2 guifg=#00313d guibg=#888888 gui=reverse
+hi ClapNoMatchesFound                       cterm=reverse ctermfg=8 ctermbg=2 guifg=#00313d guibg=#888888 gui=reverse
+
+highlight Lf_hl_popup_inputText             guifg=#87ceeb guibg=#002b36 gui=NONE    ctermfg=117 ctermbg=239 cterm=NONE
+highlight Lf_hl_popup_window                guifg=#999999 guibg=#00313d ctermfg=255 ctermbg=237 cterm=NONE
+highlight Lf_hl_popup_blank                 guifg=#002b36 guibg=#00313d gui=NONE    ctermbg=239 cterm=NONE
+highlight Lf_hl_cursorline                  guifg=#999999 guibg=#002b36 gui=reverse ctermfg=226 ctermbg=1 cterm=reverse
+
+highlight default link WhichKey          None
+highlight default link WhichKeySeperator Visual
+highlight default link WhichKeyGroup     None
+highlight default link WhichKeyDesc      None
+highlight default link WhichKeyFloating  None
 
 hi  cPreCondit                              ctermfg=9  guifg=#cb4b16  gui=NONE
 
@@ -200,6 +222,8 @@ hi  pandocVerbatimInlineDefinition          ctermfg=13  guifg=#6c71c4  gui=NONE
 hi  pandocVerbatimInlineHeading             cterm=NONE  ctermfg=9  guifg=#cb4b16  gui=NONE
 hi  pandocVerbatimInlineTable               ctermfg=4  guifg=#268bd2  gui=NONE
 
+hi mkdLineBreak guifg=Gray50 guibg=bg gui=bold  ctermfg=17 ctermbg=bg cterm=bold
+
 hi  perlHereDoc                             ctermfg=14  ctermbg=8  guifg=#93a1a1  guibg=#002b36  gui=NONE
 hi  perlStatementFileDesc                   ctermfg=6  ctermbg=8  guifg=#2aa198  guibg=#002b36  gui=NONE
 hi  perlVarPlain                            ctermfg=3  ctermbg=8  guifg=#b58900  guibg=#002b36  gui=NONE
@@ -231,7 +255,7 @@ hi link Exception                           Statement
 hi link Float                               Number
 hi link Function                            Identifier
 hi link HelpCommand                         Statement
-hi link Include                             PreProc
+hi  Include                                 cterm=NONE  ctermfg=243  guifg=#cb4b16  gui=NONE
 hi link Keyword                             Statement
 hi link Label                               Statement
 hi link Macro                               PreProc
@@ -244,13 +268,28 @@ hi link SpecialComment                      Special
 hi link StorageClass                        Type
 hi link String                              Constant
 hi link Structure                           Type
-hi link SyntasticError                      SpellBad
+hi SyntasticError term=standout cterm=standout guibg=#002b36 ctermfg=NONE  ctermbg=NONE  guisp=#dc322f  gui=undercurl
+hi YcmErrorSign ctermfg=008 guibg=#002b36
+hi YcmWarningSign ctermfg=008 guibg=#002b36
+hi VistaIcon ctermbg=008 ctermfg=143 guibg=#002b36
+hi VistaLineNr ctermbg=008 ctermfg=239 guibg=#002b36
+hi VistaColon ctermbg=008 ctermfg=239 guibg=#002b36
+hi VistaTag ctermbg=008 ctermfg=246 guibg=#002b36
+hi TagbarHighlight ctermbg=008 guibg=#002b36
+hi SignifyLineAdd ctermbg=008 guibg=#002b36
+hi SignifyLineChange ctermbg=008 guibg=#002b36
+hi SignifyLineChangeDelete ctermbg=008 guibg=#002b36
+hi SignifyLineDelete ctermbg=008 guibg=#002b36
+hi SignifyLineDeleteFirstLine ctermbg=008 guibg=#002b36
+hi SignifySignAdd ctermbg=008 guibg=#002b36
+hi SignifySignChange ctermbg=008 guibg=#002b36
 hi link SyntasticErrorSign                  Error
 hi link SyntasticStyleErrorLine             SyntasticErrorLine
 hi link SyntasticStyleErrorSign             SyntasticErrorSign
 hi link SyntasticStyleWarningLine           SyntasticWarningLine
 hi link SyntasticStyleWarningSign           SyntasticWarningSign
-hi link SyntasticWarning                    SpellCap
+hi SyntasticWarning                         ctermbg=NONE term=standout cterm=standout guibg=#002b36 guisp=#6c71c4  gui=undercurl
+hi SyntasticStyleWarning term=standout cterm=standout guibg=#002b36
 hi link SyntasticWarningSign                Todo
 hi link Tag                                 Special
 hi link Typedef                             Type

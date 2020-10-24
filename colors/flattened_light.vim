@@ -22,7 +22,8 @@ hi Constant                                cterm=NONE  ctermfg=6  guifg=#2aa198 
 hi Cursor                                  cterm=NONE  ctermfg=15  ctermbg=11  guifg=#fdf6e3  guibg=#657b83  gui=NONE
 hi CursorColumn                            cterm=NONE  ctermbg=7  guibg=#eee8d5  gui=NONE
 hi CursorLine                              cterm=NONE  ctermbg=7  guibg=#eee8d5  guisp=#586e75  gui=NONE
-hi CursorLineNr                            cterm=NONE  ctermfg=130  gui=NONE  guifg=Brown
+hi CursorLineNr                            cterm=NONE  term=standout ctermfg=darkgrey  gui=NONE  guifg=Brown
+hi LineNr                                  cterm=NONE  term=standout ctermfg=grey guifg=#93a1a1  guibg=#fdf6e3  gui=NONE
 hi DiffAdd                                 cterm=NONE  ctermfg=2  ctermbg=7  gui=NONE  guifg=#719e07  guibg=#eee8d5  guisp=#719e07  gui=NONE
 hi DiffChange                              cterm=NONE  ctermfg=3  ctermbg=7  gui=NONE  guifg=#b58900  guibg=#eee8d5  guisp=#b58900  gui=NONE
 hi DiffDelete                              cterm=NONE  ctermfg=1  ctermbg=7  gui=NONE  guifg=#dc322f  guibg=#eee8d5  gui=NONE
@@ -35,12 +36,11 @@ hi Folded                                  cterm=NONE,underline  ctermfg=11  cte
 hi HelpExample                             cterm=NONE  ctermfg=10  guifg=#586e75  gui=NONE
 hi Identifier                              cterm=NONE  ctermfg=4  guifg=#268bd2  gui=NONE
 hi IncSearch                               cterm=standout  ctermfg=9  gui=standout  guifg=#cb4b16
-hi LineNr                                  cterm=NONE  ctermfg=14  ctermbg=7  guifg=#93a1a1  guibg=#eee8d5  gui=NONE
 hi MatchParen                              cterm=NONE  ctermfg=1  ctermbg=14  gui=NONE  guifg=#dc322f  guibg=#93a1a1  gui=NONE
 hi ModeMsg                                 cterm=NONE  ctermfg=4  guifg=#268bd2  gui=NONE
 hi MoreMsg                                 cterm=NONE  ctermfg=4  guifg=#268bd2  gui=NONE
 hi NonText                                 cterm=NONE  ctermfg=12  gui=NONE  guifg=#839496  gui=NONE
-hi Pmenu                                   cterm=reverse  ctermfg=11  ctermbg=7  guifg=#657b83  guibg=#eee8d5  gui=reverse
+hi Pmenu                                   ctermbg=7 guibg=#eee8d5
 hi PmenuSbar                               cterm=reverse  ctermfg=0  ctermbg=11  guifg=#073642  guibg=#657b83  gui=reverse
 hi PmenuSel                                cterm=reverse  ctermfg=14  ctermbg=0  guifg=#93a1a1  guibg=#073642  gui=reverse
 hi PmenuThumb                              cterm=reverse  ctermfg=11  ctermbg=15  guifg=#657b83  guibg=#fdf6e3  gui=reverse
@@ -65,12 +65,30 @@ hi Todo                                    cterm=NONE  ctermfg=5  guifg=#d33682 
 hi Type                                    cterm=NONE  ctermfg=3  guifg=#b58900  gui=NONE
 hi Underlined                              cterm=NONE  ctermfg=13  guifg=#6c71c4  gui=NONE
 hi VarId                                   cterm=NONE  ctermfg=4  guifg=#268bd2  gui=NONE
-hi VertSplit                               cterm=NONE  ctermfg=12  ctermbg=12  guifg=#839496  guibg=#839496  gui=NONE
+hi VertSplit                               cterm=NONE  ctermfg=grey guifg=#fdf6e3 guibg=#eee8d5
 hi Visual                                  cterm=reverse  ctermfg=14  ctermbg=15 gui=reverse  guifg=#93a1a1  guibg=#fdf6e3  guibg=NONE
 hi VisualNOS                               cterm=reverse  ctermbg=7 gui=reverse  guibg=#eee8d5  guibg=NONE
 hi WarningMsg                              cterm=NONE  ctermfg=9  gui=NONE  guifg=#dc322f  gui=NONE
 hi WildMenu                                cterm=reverse  ctermfg=0  ctermbg=7  guifg=#073642  guibg=#eee8d5  gui=reverse
+
+hi ClapInput                                cterm=reverse ctermfg=8 ctermbg=2 guifg=#fdf6e3 guibg=#888888 gui=reverse
+hi ClapDisplay                              cterm=reverse ctermfg=8 ctermbg=2 guifg=#eee8d5 guibg=#888888 gui=reverse
+hi ClapDefaultPreview                       cterm=reverse ctermfg=8 ctermbg=2 guifg=#eee8d5 guibg=#000000 gui=reverse
+hi ClapCurrentSelection                     cterm=reverse ctermfg=8 ctermbg=2 guifg=#eee8d5 guibg=#888888 gui=reverse
+hi ClapSelected                             cterm=reverse ctermfg=8 ctermbg=2 guifg=#eee8d5 guibg=#000000 gui=reverse
+hi ClapDefaultSelected                      cterm=reverse ctermfg=8 ctermbg=2 guifg=#eee8d5 guibg=#000000 gui=reverse
+hi ClapDefaultCurrentSelection              cterm=reverse ctermfg=8 ctermbg=2 guifg=#eee8d5 guibg=#000000 gui=reverse
+hi ClapMatches                              cterm=reverse ctermfg=8 ctermbg=2 guifg=#eee8d5 guibg=#000000 gui=reverse
+hi ClapFuzzyMatches                         cterm=reverse ctermfg=8 ctermbg=2 guifg=#eee8d5 guibg=#888888 gui=reverse
+hi ClapNoMatchesFound                       cterm=reverse ctermfg=8 ctermbg=2 guifg=#eee8d5 guibg=#888888 gui=reverse
+
+highlight Lf_hl_popup_inputText             guifg=#999999 guibg=#eee8d5 gui=NONE    ctermfg=117 ctermbg=239 cterm=NONE
+highlight Lf_hl_popup_window                guifg=#999999 guibg=#eee8d5 ctermfg=255 ctermbg=237 cterm=NONE
+highlight Lf_hl_popup_blank                 guifg=#999999 guibg=#eee8d5 gui=NONE    ctermbg=239 cterm=NONE
+highlight Lf_hl_cursorline                  guifg=#999999 guibg=#fdf6e3 gui=reverse ctermfg=226 ctermbg=1 cterm=reverse
+
 hi cPreCondit                              cterm=NONE  ctermfg=9  guifg=#cb4b16  gui=NONE
+
 hi gitcommitBranch                         cterm=NONE  ctermfg=5  gui=NONE  guifg=#d33682  gui=NONE
 hi gitcommitComment                        cterm=NONE  ctermfg=14  gui=italic  guifg=#93a1a1  gui=NONE
 hi gitcommitDiscardedFile                  cterm=NONE  ctermfg=1  gui=NONE  guifg=#dc322f  gui=NONE
@@ -192,6 +210,9 @@ hi pandocVerbatimInline                    cterm=NONE  ctermfg=3  guifg=#b58900 
 hi pandocVerbatimInlineDefinition          cterm=NONE  ctermfg=13  guifg=#6c71c4  gui=NONE
 hi pandocVerbatimInlineHeading             cterm=NONE  ctermfg=9  gui=NONE  guifg=#cb4b16  gui=NONE
 hi pandocVerbatimInlineTable               cterm=NONE  ctermfg=4  guifg=#268bd2  gui=NONE
+
+hi mkdLineBreak guifg=Gray50 guibg=bg gui=bold  ctermfg=17 ctermbg=bg cterm=bold
+
 hi perlHereDoc                             cterm=NONE  ctermfg=10  ctermbg=15  guifg=#586e75  guibg=#fdf6e3  gui=NONE
 hi perlStatementFileDesc                   cterm=NONE  ctermfg=6  ctermbg=15  guifg=#2aa198  guibg=#fdf6e3  gui=NONE
 hi perlVarPlain                            cterm=NONE  ctermfg=3  ctermbg=15  guifg=#b58900  guibg=#fdf6e3  gui=NONE
