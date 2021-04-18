@@ -344,6 +344,8 @@ hi clear helpLeadBlank
 hi clear helpNormal
 hi clear pandocTableStructre
 
+hi FloatermBorder guibg=#002b36
+
 if has('nvim')
   let g:terminal_color_0  = '#073642'
   let g:terminal_color_1  = '#dc322f'
