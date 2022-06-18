@@ -346,6 +346,9 @@ hi clear pandocTableStructre
 
 hi FloatermBorder guibg=#002b36
 
+hi ExtraWhitespace ctermbg=darkgrey guibg=#383838
+autocmd FileType cpp,hpp,cc,hh,c,h,py,java,scala au BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t\+\|\t\+\zs \+/
+
 if has('nvim')
   let g:terminal_color_0  = '#073642'
   let g:terminal_color_1  = '#dc322f'
