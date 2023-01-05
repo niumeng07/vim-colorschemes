@@ -497,7 +497,7 @@ endif
 set background=dark
 
 hi LineNr term=standout ctermbg=235
-hi CursorLineNr term=standout ctermfg=white ctermbg=235
+hi CursorLineNr cterm=None ctermfg=15 ctermbg=235 gui=bold guifg=Yellow term=standout
 hi Visual term=standout ctermbg=236
 hi SignifyLineAdd ctermbg=235 guibg=#002b36
 hi SignifyLineChange ctermbg=235 guibg=#002b36
