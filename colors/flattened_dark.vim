@@ -84,6 +84,7 @@ hi ClapMatches                             cterm=reverse ctermfg=8 ctermbg=2 gui
 hi ClapFuzzyMatches                        cterm=reverse ctermfg=8 ctermbg=2 guifg=#00313d guibg=#888888 gui=reverse
 hi ClapNoMatchesFound                      cterm=reverse ctermfg=8 ctermbg=2 guifg=#00313d guibg=#888888 gui=reverse
 hi Operator                                ctermfg=75 guifg=#8abeb7
+hi WinSeparator                            guifg=#00313d
 
 hi Lf_hl_popup_inputText            ctermfg=117 ctermbg=239 cterm=NONE  guifg=#87ceeb guibg=#002b36 gui=NONE
 hi Lf_hl_popup_window               ctermfg=255 ctermbg=237 cterm=NONE  guifg=#999999 guibg=#00313d
