@@ -1,6 +1,6 @@
-" 'flattened_dark.vim' -- Vim color scheme.
-" Maintainer:   Romain Lafourcade (romainlafourcade@gmail.com)
-" Description:  Dark Solarized, without the bullshit.
+" 'dadaliu_dark.vim' -- Vim color scheme.
+" Maintainer:   Forked from Dark Solarized
+" Description:  Customed Dark Solarized, without the bullshit.
 
 hi clear
 
@@ -8,7 +8,7 @@ if exists('syntax_on')
   syntax reset
 endif
 
-let colors_name = 'flattened_dark'
+let colors_name = 'dadaliu_dark'
 
 hi Normal                                  ctermfg=12  ctermbg=8  guifg=#839496  guibg=#002b36  gui=NONE
 
@@ -84,6 +84,7 @@ hi ClapMatches                             cterm=reverse ctermfg=8 ctermbg=2 gui
 hi ClapFuzzyMatches                        cterm=reverse ctermfg=8 ctermbg=2 guifg=#00313d guibg=#888888 gui=reverse
 hi ClapNoMatchesFound                      cterm=reverse ctermfg=8 ctermbg=2 guifg=#00313d guibg=#888888 gui=reverse
 hi Operator                                ctermfg=75 guifg=#8abeb7
+hi WinSeparator                            guifg=#00313d
 
 hi Lf_hl_popup_inputText            ctermfg=117 ctermbg=239 cterm=NONE  guifg=#87ceeb guibg=#002b36 gui=NONE
 hi Lf_hl_popup_window               ctermfg=255 ctermbg=237 cterm=NONE  guifg=#999999 guibg=#00313d
