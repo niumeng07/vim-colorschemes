@@ -1,6 +1,6 @@
-" 'flattened_dark.vim' -- Vim color scheme.
-" Maintainer:   Romain Lafourcade (romainlafourcade@gmail.com)
-" Description:  Dark Solarized, without the bullshit.
+" 'dadaliu_dark.vim' -- Vim color scheme.
+" Maintainer:   Forked from Dark Solarized
+" Description:  Customed Dark Solarized, without the bullshit.
 
 hi clear
 
@@ -8,7 +8,7 @@ if exists('syntax_on')
   syntax reset
 endif
 
-let colors_name = 'flattened_dark'
+let colors_name = 'dadaliu_dark'
 
 hi Normal                                  ctermfg=12  ctermbg=8  guifg=#839496  guibg=#002b36  gui=NONE
 
