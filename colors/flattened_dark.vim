@@ -254,7 +254,7 @@ hi link Character                          Constant
 hi link Conditional                        Statement
 hi link Debug                              Special
 hi link Define                             PreProc
-hi link Delimiter                          Special
+hi Delimiter                               guifg=#8F8F8F
 hi link Exception                          Statement
 hi link Float                              Number
 hi link HelpCommand                        Statement
